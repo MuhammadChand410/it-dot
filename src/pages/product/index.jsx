@@ -1,4 +1,5 @@
 import HeroProduct from "./hero-product";
+import RightInbox from "./right-inbox";
 import UniqueFeatures from "./unique-features";
 
 export default function Product() {
@@ -6,6 +7,7 @@ export default function Product() {
         <>
             <HeroProduct />
             <UniqueFeatures/>
+            <RightInbox />
         </>
     )
 }

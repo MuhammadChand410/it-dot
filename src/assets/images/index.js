@@ -21,6 +21,7 @@ import JordanImage  from './jordan-image.png';
 import SamanthaImage  from './samantha-image.png';
 import GabrialImage  from './gabrial-image.png';
 import ProductHeroImage  from './product-hero-image.png';
+import SalesProductivityImage  from './sales-productivity.png';
 export {
     HeaderLogo,
     CompleteImagee,
@@ -45,5 +46,6 @@ export {
     SamanthaImage,
     GabrialImage,
     ProductHeroImage,
+    SalesProductivityImage,
     
 }

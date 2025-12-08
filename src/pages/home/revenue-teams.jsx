@@ -58,7 +58,7 @@ export default function RevenueTeams() {
                 </div>
 
                 <div className="grid grid-cols-1 items-center 
-                    md:[grid-template-columns:minmax(100px,580px)_minmax(100px,450px)]
+                    md:grid-cols-[minmax(100px,580px)_minmax(100px,450px)]
                     gap-8 justify-between">
 
                     <div className="max-w-[496px]">
