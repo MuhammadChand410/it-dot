@@ -1,4 +1,4 @@
-import { AiReply } from "../../assets/images";
+import AiReply  from "../../assets/images/ai-reply.mp4";
 
 export default function CompleteImage(){
     return(

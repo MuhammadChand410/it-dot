@@ -55,7 +55,6 @@ export default function ThatWorks() {
                     <h2 className="text-4xl font-semibold text-[#141219] text-center pb-10">
                         AI that works where you work
                     </h2>
-
                     <div className="bg-[#F9FAFB] overflow-auto shadow-xs px-2 py-2 rounded-4xl max-w-[616px] flex justify-between">
                         {WORKS_BUTTON.map((card) => (
                             <button

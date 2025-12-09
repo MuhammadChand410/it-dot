@@ -36,7 +36,7 @@ import Beyond  from './beyond.mp4';
 import Seamless  from './seamless.mp4';
 import UserCentric  from './user-centric.mp4';
 import Automate  from './automate-workflows.mp4';
-import AiReply  from './ai-reply.mp4';
+// import AiReply  from './ai-reply.mp4';
 export {
     HeaderLogo,
     CompleteImagee,
@@ -76,6 +76,6 @@ export {
     UserCentric,
     Seamless,
     Automate,
-    AiReply,
+    // AiReply,
     
 }
