@@ -22,6 +22,21 @@ import SamanthaImage  from './samantha-image.png';
 import GabrialImage  from './gabrial-image.png';
 import ProductHeroImage  from './product-hero-image.png';
 import SalesProductivityImage  from './sales-productivity.png';
+import CrmTeam  from './crm-team.webp';
+import LeadershipImage  from './leadership-image.webp';
+import OperationImage  from './operation-image.webp';
+import ClestialLaptopImage  from './celestial-laptop-mockup.png';
+import ActionableImage  from './actionable-insights.webp';
+import AlwaysImage  from './always-synced.webp';
+import SmarterImage  from './smarter-interactions.webp';
+import WorkEmailImage  from './work-inside-email.webp';
+import DotVideo  from './dot-it-video.mp4';
+import Invovative  from './invovative.mp4';
+import Beyond  from './beyond.mp4';
+import Seamless  from './seamless.mp4';
+import UserCentric  from './user-centric.mp4';
+import Automate  from './automate-workflows.mp4';
+import AiReply  from './ai-reply.mp4';
 export {
     HeaderLogo,
     CompleteImagee,
@@ -47,5 +62,20 @@ export {
     GabrialImage,
     ProductHeroImage,
     SalesProductivityImage,
+    CrmTeam,
+    OperationImage,
+    LeadershipImage,
+    ClestialLaptopImage,
+    ActionableImage,
+    AlwaysImage,
+    SmarterImage,
+    WorkEmailImage,
+    DotVideo,
+    Invovative,
+    Beyond,
+    UserCentric,
+    Seamless,
+    Automate,
+    AiReply,
     
 }

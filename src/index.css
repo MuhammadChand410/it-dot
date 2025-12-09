@@ -44,7 +44,7 @@ body {
     transform: translateX(-1150px)
   }
 }
-
+/* 
 .section {
   background-image:
     url("src/assets/images/left-image.png"),
@@ -52,4 +52,4 @@ body {
   background-size: cover, cover;
   background-position: left center, right center;
   background-repeat: no-repeat, no-repeat;
-}
+} */

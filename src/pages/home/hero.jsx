@@ -3,7 +3,7 @@ import Button from "../../commponent/common/header/button"
 
 export default function HomeHero({ count = 5, className = "" }) {
     return (
-        <section className="section py-8 md:py-20">
+        <section className="py-8 md:py-20">
             <div className="container">
                 <div className="grid justify-center">
                     <div className=" text-center">
