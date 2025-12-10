@@ -88,7 +88,6 @@ export const SmarterIcon = () => (
         <path d="M11 18H29" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
         <path d="M17 24.5C17 24.5 18.5 25 19 26.5C19 26.5 21.1765 22.5 24 21.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
     </svg>
-
 );
 
 export const ActionableIcon = () => (
@@ -102,5 +101,24 @@ export const ActionableIcon = () => (
         <path d="M13.6368 13.6368L12.9297 12.9297" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
         <path d="M22.5155 27.3074C23.5259 26.9806 23.9311 26.0558 24.0451 25.1256C24.0791 24.8477 23.8505 24.6172 23.5705 24.6172L16.4754 24.6174C16.1858 24.6174 15.9532 24.8632 15.9878 25.1507C16.0994 26.0791 16.3812 26.7573 17.452 27.3074M22.5155 27.3074C22.5155 27.3074 17.6283 27.3074 17.452 27.3074M22.5155 27.3074C22.394 29.2524 21.8323 30.0227 20.0053 30.0011C18.0511 30.0372 17.6016 29.0851 17.452 27.3074" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
     </svg>
-
 );
+
+export const CancelIcon = () => (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0.5" y="0.5" width="23" height="23" rx="11.5" fill="#F5F5F5" />
+        <rect x="0.5" y="0.5" width="23" height="23" rx="11.5" stroke="#717680" />
+        <path d="M9.19065 15.5273C8.97344 15.7395 8.62656 15.7395 8.40935 15.5273C8.18484 15.308 8.18484 14.9468 8.40935 14.7275L11.2 12.0013L8.40935 9.27516C8.18484 9.05583 8.18484 8.6947 8.40935 8.47538C8.62656 8.26318 8.97344 8.26318 9.19065 8.47538L12 11.2198L14.8093 8.47538C15.0266 8.26318 15.3734 8.26318 15.5907 8.47538C15.8152 8.6947 15.8152 9.05583 15.5907 9.27516L12.8 12.0013L15.5907 14.7275C15.8152 14.9468 15.8152 15.308 15.5907 15.5273C15.3734 15.7395 15.0266 15.7395 14.8093 15.5273L12 12.7829L9.19065 15.5273Z" fill="#717680" />
+    </svg>
+);
+
+export const SaveIcon = () => (
+    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="48" height="48" rx="9" fill="#0160C9" />
+        <path d="M16 15H32" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M17.5 15V17.0304C17.5 18.2723 18.0768 19.4437 19.0612 20.2009L24 24L28.9388 20.2009C29.9232 19.4437 30.5 18.2723 30.5 17.0304V15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M17.5 33V30.9696C17.5 29.7277 18.0768 28.5563 19.0612 27.7991L24 24L28.9388 27.7991C29.9232 28.5563 30.5 29.7277 30.5 30.9696V33" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M16 33H32" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+);
+
+

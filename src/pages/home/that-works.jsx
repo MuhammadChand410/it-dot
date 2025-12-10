@@ -71,7 +71,6 @@ export default function ThatWorks() {
                         ))}
                     </div>
                 </div>
-
                 <div className="grid grid-cols-1 items-center 
                     md:grid-cols-[minmax(100px,550px)_minmax(100px,620px)]
                     gap-13">
@@ -99,19 +98,19 @@ export default function ThatWorks() {
                         <Button />
                     </div>
 
-                   
-                <div>
-                    <video
-                        src={Automate}
-                        width={620}
-                        height={550}
-                        className="rounded-xl"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                    />
-                </div>
+
+                    <div>
+                        <video
+                            src={Automate}
+                            width={620}
+                            height={550}
+                            className="rounded-xl"
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                        />
+                    </div>
                 </div>
 
             </div>

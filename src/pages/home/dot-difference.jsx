@@ -54,7 +54,7 @@ export default function DotDifference() {
                         heading={`The dot.it difference`}
                         classNamehead={`!pb-4 !text-center`}
                         desc={`Not just doing things different but doing them better and smarter for every user.`}
-                        classNameDesc={`!text-center !pb-15`}
+                        classNameDesc={`!text-center !pb-8 md:!pb-15`}
                     />
                 </div>
 

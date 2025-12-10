@@ -49,7 +49,7 @@ export default function SliderTeams() {
                     heading="Trusted by teams globally"
                     classNamehead="!pb-4 !text-center"
                     desc="From startups to enterprises, dot.it helps teams save time and close deals faster."
-                    classNameDesc="!text-center !pb-15"
+                    classNameDesc="!text-center !pb-8 md:!pb-15"
                 />
 
                 <div ref={sliderRef} className="relative w-full overflow-hidden py-4">

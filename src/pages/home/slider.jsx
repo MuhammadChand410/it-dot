@@ -75,7 +75,7 @@ export default function Slider() {
     return (
         <section className="py-8 md:py-10">
             <div>
-                <div className="main-animate max-w-[980px] h-[70px] mx-auto flex items-center overflow-hidden">
+                <div className="main-animate max-w-[880px] h-[70px] mx-auto flex items-center overflow-hidden">
                     {showSlider && (
                         <div className="slider w-full">
                             <div className="slide-track flex items-center">

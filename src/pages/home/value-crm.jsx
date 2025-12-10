@@ -49,7 +49,7 @@ export default function ValueCrm() {
         <section className="py-8 md:py-20 bg-white">
             <div className="container">
                 <div>
-                    <HeadDesc heading={`Maximize the value of your CRM`} classNamehead={`!text-center !pb-4`} desc={`Works seamlessly with your current tools`} classNameDesc={`!text-center !pb-15`} />
+                    <HeadDesc heading={`Maximize the value of your CRM`} classNamehead={`!text-center !pb-4`} desc={`Works seamlessly with your current tools`} classNameDesc={`!text-center !pb-8 md:!pb-15`} />
                 </div>
                 <div className="flex md:flex-row flex-col pb-8 gap-6">
                     {VALUES_CRMS.map((card =>
