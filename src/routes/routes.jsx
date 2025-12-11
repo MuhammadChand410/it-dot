@@ -4,6 +4,7 @@ import Home from "../pages/home";
 import Product from "../pages/product";
 import WhyDoIt from "../pages/why-do";
 import ScrollToTop from "./scroll-top";
+import Blogs from "../pages/blogs";
 
 
 export default function MyRouts() {
@@ -16,6 +17,7 @@ export default function MyRouts() {
                   <Route path="/" element={<Home />} />
                   <Route path="/product" element={<Product />} />
                   <Route path="/why/dot/it" element={<WhyDoIt />} />
+                  <Route path="/blogs" element={<Blogs />} />
                </Route>
             </Routes>
          </BrowserRouter>

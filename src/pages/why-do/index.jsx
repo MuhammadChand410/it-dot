@@ -1,3 +1,4 @@
+import AiDriven from "./ai-driven";
 import Faqs from "./faqs";
 import StopWasting from "./stop-wasting";
 import TeamLove from "./team-love";
@@ -10,6 +11,7 @@ export default function WhyDoIt(){
         <StopWasting />
         <TeamLove />
         <Faqs />
+        <AiDriven />
         </>
     )
 }
