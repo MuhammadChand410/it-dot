@@ -1,4 +1,5 @@
 import Articules from "./articules";
+import Blog from "./blog";
 import HeroBlog from "./hero-blog";
 
 export default function Blogs(){
@@ -6,6 +7,7 @@ export default function Blogs(){
         <>
         <HeroBlog/>
         <Articules />
+        <Blog />
         </>
     )
 }

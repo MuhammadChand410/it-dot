@@ -41,6 +41,7 @@ import IndustryImage  from './industry-image.png';
 import ManagementImagee  from './management-image.png';
 import FeaturesImage  from './feature-image.png';
 import TechnologyImage  from './technology-image.png';
+import BlogBillImage  from './blog-bill-image.png';
 export {
     HeaderLogo,
     CompleteImagee,
@@ -85,5 +86,6 @@ export {
     ManagementImagee,
     FeaturesImage,
     TechnologyImage,
+    BlogBillImage,
     
 }
