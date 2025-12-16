@@ -43,6 +43,7 @@ import FeaturesImage  from './feature-image.png';
 import TechnologyImage  from './technology-image.png';
 import BlogBillImage  from './blog-bill-image.png';
 import HeroKeydataImage  from './hero-keydata.png';
+import HeroHomeImage  from './hero-home.jpeg';
 export {
     HeaderLogo,
     CompleteImagee,
@@ -89,5 +90,6 @@ export {
     TechnologyImage,
     BlogBillImage,
     HeroKeydataImage,
+    HeroHomeImage,
     
 }

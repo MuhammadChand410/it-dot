@@ -1,9 +1,12 @@
 import { StarIcon } from "../../assets/icon"
+import { HeroHomeImage } from "../../assets/images"
 import Button from "../../commponent/common/header/button"
 
 export default function HomeHero({ count = 5, className = "" }) {
     return (
-        <section className="py-8 md:py-20">
+        <section className={`py-8 md:py-20bg-cover bg-center bg-no-repeat`} style={{
+            backgroundImage: `url(${HeroHomeImage})`,
+        }}>
             <div className="container">
                 <div className="grid justify-center">
                     <div className=" text-center">
