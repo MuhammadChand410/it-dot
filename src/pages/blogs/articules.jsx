@@ -3,6 +3,7 @@ import { ArrowLeftIcon, ArrowRightIcon } from "lucide-react";
 
 import { ArrowwIcon, SearchIcon } from "../../assets/icon";
 import { FeaturesImage, TechnologyImage } from "../../assets/images";
+import { Link } from "react-router-dom";
 
 export default function Articules({ totalPages = 10 }) {
 
@@ -56,7 +57,7 @@ export default function Articules({ totalPages = 10 }) {
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-[minmax(100px,492px)_minmax(100px,764px)] gap-6">
                         {TECHNOLOGYY_IMAGEE.map((card =>
-                            <div className="px-3 py-3 w-fit h-fit border border-gray-200 rounded-xl" key={card.id}>
+                            <Link to={`/key/data/bossted`} className="px-3 py-3 w-fit h-fit border border-gray-200 rounded-xl" key={card.id}>
                                 <div className="">
                                     <img src={card.thumbnaill} className=" h-full w-full" alt="technology-image" width={204} height={194} loading="lazy" />
                                 </div>
@@ -74,11 +75,11 @@ export default function Articules({ totalPages = 10 }) {
                                         <span className="text-sm font-medium text-[#535862]  py-0.5 px-1.5 rounded-md border border-gray-200 bg-white">{card.spann}</span>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                         ))}
                         <div className="grid gap-6">
                             {TECHNOLOGY_IMAGE.map((card =>
-                                <div className="px-3 py-3 border border-gray-200 rounded-xl grid grid-cols-1 md:grid-cols-[minmax(100px,204px)_minmax(100px,420px)] gap-4" key={card.id}>
+                                <Link to={`/key/data/bossted`} className="px-3 py-3 border border-gray-200 rounded-xl grid grid-cols-1 md:grid-cols-[minmax(100px,204px)_minmax(100px,420px)] gap-4" key={card.id}>
                                     <div className="w-full h-48 md:h-52 lg:h-52 overflow-hidden rounded-xl">
                                         <img
                                             src={card.thumbnail}
@@ -99,7 +100,7 @@ export default function Articules({ totalPages = 10 }) {
                                         <p className="text-sm font-normal text-[#475467] pb-4">{card.desc}</p>
                                         <span className="text-sm font-medium text-[#535862]  py-0.5 px-1.5 rounded-md border border-gray-200 bg-white">{card.span}</span>
                                     </div>
-                                </div>
+                                </Link>
                             ))}
                         </div>
                     </div>

@@ -5,6 +5,7 @@ import Product from "../pages/product";
 import WhyDoIt from "../pages/why-do";
 import ScrollToTop from "./scroll-top";
 import Blogs from "../pages/blogs";
+import KeyDataBosted from "../pages/keydata-boosted";
 
 
 export default function MyRouts() {
@@ -18,6 +19,7 @@ export default function MyRouts() {
                   <Route path="/product" element={<Product />} />
                   <Route path="/why/dot/it" element={<WhyDoIt />} />
                   <Route path="/blogs" element={<Blogs />} />
+                  <Route path="/key/data/bossted" element={<KeyDataBosted />} />
                </Route>
             </Routes>
          </BrowserRouter>

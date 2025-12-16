@@ -13,9 +13,7 @@ export default function HeroBlog() {
                     </div>
                 </div>
                 <div className="flex md:flex-row flex-col gap-4 justify-center">
-                    
-                        <input type="text" name="search" id="" className="md:w-fit w-full border border-gray-200 shadow-sm rounded-2xl bg-white text-base font-normal text-[#ABAFB1] py-2 px-4" placeholder="Enter your email" />
-                    
+                    <input type="text" name="search" id="" className="md:w-fit w-full border border-gray-200 shadow-sm rounded-2xl bg-white text-base font-normal text-[#ABAFB1] py-2 px-4" placeholder="Enter your email" />
                     <button className="w-fit text-sm shadow-sm cursor-pointer hover:bg-[#014fa8] font-medium text-white bg-[#0160C9] px-5 py-3.5 rounded-full">Subscribe</button>
                 </div>
             </div>
