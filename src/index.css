@@ -45,12 +45,9 @@ body {
   }
 }
 
-/* 
-.section {
-  background-image:
-    url("src/assets/images/left-image.png"),
-    url("src/assets/images/right-image.png");
-  background-size: cover, cover;
-  background-position: left center, right center;
-  background-repeat: no-repeat, no-repeat;
-} */
+
+@media (max-width: 575px) {
+  .container {
+    padding: 0 16px;
+  }
+}
