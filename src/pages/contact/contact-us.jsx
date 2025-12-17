@@ -27,7 +27,7 @@ export default function ContactUs() {
         <section className="md:py-20 py-8 bg-white">
             <div className="container">
                 <div className="grid grid-cols-1 md:grid-cols-[minmax(100px,698px)_minmax(100px,582px)] gap-8 md:gap-12 items-center">
-                    <div className="w-full pl-10 md:order-1 order-2">
+                    <div className="w-full pl-0 md:pl-10 md:order-1 order-2">
                         <div className="pb-6 md:pb-8">
                             <h2 className="text-3xl font-semibold text-[#141219] pb-2">Ready to dot your i’s and cross your t’s</h2>
                             <p className="text-base font-normal text-[#777B8B]">Our friendly team would love to hear from you.</p>
