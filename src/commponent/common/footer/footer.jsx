@@ -94,7 +94,7 @@ export default function Footer({ count = 5, className = "" }) {
                         <p className="text-[#535862] text-sm font-medium">100+ Early access members</p>
                     </div>
                     <div className="flex justify-center">
-                        <Button />
+                        <Button text={`Get Started`}/>
                     </div>
                 </div>
                 <div className="bg-white py-8">

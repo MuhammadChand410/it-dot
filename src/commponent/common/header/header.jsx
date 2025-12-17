@@ -11,6 +11,7 @@ export default function Header() {
         { id: 2, text: "Blogs", path: "/blogs" },
         { id: 3, text: "Help Center", path: "#" },
         { id: 4, text: "Pricing", path: "#" },
+        { id: 5, text: "Contact Us", path: "/contact/us" },
     ];
 
     const HEADER_LINKS = [

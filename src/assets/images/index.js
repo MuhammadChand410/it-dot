@@ -44,6 +44,9 @@ import TechnologyImage  from './technology-image.png';
 import BlogBillImage  from './blog-bill-image.png';
 import HeroKeydataImage  from './hero-keydata.png';
 import HeroHomeImage  from './hero-home.jpeg';
+import PmImage  from './pm-image.png';
+import WhatImage  from './what-image.png';
+import ContactUsImage  from './contact-us-image.png';
 export {
     HeaderLogo,
     CompleteImagee,
@@ -91,5 +94,8 @@ export {
     BlogBillImage,
     HeroKeydataImage,
     HeroHomeImage,
+    WhatImage,
+    PmImage,
+    ContactUsImage,
     
 }

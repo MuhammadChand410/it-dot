@@ -95,7 +95,7 @@ export default function ThatWorks() {
                                 </div>
                             ))}
                         </div>
-                        <Button />
+                        <Button text={`Get Started`}/>
                     </div>
 
 

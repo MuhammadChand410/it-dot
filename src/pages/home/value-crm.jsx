@@ -62,7 +62,7 @@ export default function ValueCrm() {
                     ))}
                 </div>
                 <div className="flex justify-center">
-                    <Button />
+                    <Button text={`Get Started`}/>
                 </div>
             </div>
         </section>
