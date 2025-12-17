@@ -47,7 +47,7 @@ export default function StopWasting() {
         },
     ]
 
-    const heights = ["h-[240px] md:h-[376px]", "h-[220px] md:h-[312px]", "h-[228px] md:h-[261px]"];
+    const heights = ["h-[240px] md:h-[376px]", "h-[220px] md:h-[312px]", "h-[238px] md:h-[261px]"];
     const backgrounds = [
         "bg-[#0160C9]",
         "bg-[#E6EFFA] mt-0 md:mt-16",
