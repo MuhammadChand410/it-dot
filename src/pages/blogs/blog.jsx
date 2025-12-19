@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ArrowLeftIcon, ArrowRightIcon, ArrowwIcon, SearchIcon } from "../../assets/icon";
 import { BlogBillImage } from "../../assets/images";
+import { Link } from "react-router-dom";
 
 export default function Blog({ totalPages = 10 }) {
     const [currentPage, setCurrentPage] = useState(3);
@@ -32,6 +33,7 @@ export default function Blog({ totalPages = 10 }) {
             titlee: 'Bill Walsh leadership lessons',
             descc: 'JavaScript frameworks make development easy with extensive features and functionalities.',
             spann: '#technology',
+            path:'/bill/wash'
         },
         {
             id: 2,
@@ -40,6 +42,7 @@ export default function Blog({ totalPages = 10 }) {
             titlee: 'PM mental models',
             descc: 'JavaScript frameworks make development easy with extensive features and functionalities.',
             spann: '#Design',
+            path:'/pm/mental'
         },
         {
             id: 3,
@@ -48,6 +51,7 @@ export default function Blog({ totalPages = 10 }) {
             titlee: 'What is Wireframing?',
             descc: 'JavaScript frameworks make development easy with extensive features and functionalities.',
             spann: '#Design',
+            path:'/what/wirefaring'
         },
         {
             id: 4,
@@ -56,6 +60,7 @@ export default function Blog({ totalPages = 10 }) {
             titlee: 'Our top 10 Javascript frameworks to use',
             descc: 'JavaScript frameworks make development easy with extensive features and functionalities.',
             spann: '#Design',
+            path:'/top/javascript'
         },
         {
             id: 5,
@@ -64,6 +69,7 @@ export default function Blog({ totalPages = 10 }) {
             titlee: 'Our top 10 Javascript frameworks to use',
             descc: 'JavaScript frameworks make development easy with extensive features and functionalities.',
             spann: '#Design',
+            path:'/top/javascript'
         },
         {
             id: 6,
@@ -72,6 +78,7 @@ export default function Blog({ totalPages = 10 }) {
             titlee: 'Our top 10 Javascript frameworks to use',
             descc: 'JavaScript frameworks make development easy with extensive features and functionalities.',
             spann: '#Design',
+            path:'/top/javascript'
         },
     ];
 
@@ -121,7 +128,7 @@ export default function Blog({ totalPages = 10 }) {
 
                 <div className="grid md:grid-cols-3 grid-cols-1 pt-6 gap-6 border-b border-gray-200 pb-6">
                     {displayedCards.map((card) => (
-                        <div
+                        <Link to={card.path}
                             className="px-3 py-3 w-fit h-fit border border-gray-200 rounded-xl"
                             key={card.id}
                         >
@@ -149,7 +156,7 @@ export default function Blog({ totalPages = 10 }) {
                                     {card.spann}
                                 </span>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
 

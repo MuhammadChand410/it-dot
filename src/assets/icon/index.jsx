@@ -249,6 +249,34 @@ export const TwiterIcon = () => (
     </svg>
 );
 
+export const TickCircalIcon = () => (
+   <svg
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="transition-colors duration-300"
+        >
+            <rect
+                width="28"
+                height="28"
+                rx="14"
+                className="fill-[#FAFAFA] group-hover:fill-[#E6EFFA]"
+            />
+            <path
+                d="M9.33203 14.0013L12.6654 17.3346L19.332 10.668"
+                className="stroke-[#100F11] "
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+        </svg>
+);
+
+
+
+
 
 
 

@@ -10,7 +10,7 @@ export default function Header() {
         { id: 1, text: "Docs", path: "#" },
         { id: 2, text: "Blogs", path: "/blogs" },
         { id: 3, text: "Help Center", path: "#" },
-        { id: 4, text: "Pricing", path: "#" },
+        { id: 4, text: "Pricing", path: "/princing" },
         { id: 5, text: "Contact Us", path: "/contact/us" },
     ];
 

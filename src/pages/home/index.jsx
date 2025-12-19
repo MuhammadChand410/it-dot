@@ -1,9 +1,10 @@
+
+import SliderTeams from "../../commponent/common/slider-team/slider";
 import CompleteImage from "./complete-image";
 import DotDifference from "./dot-difference";
 import HomeHero from "./hero";
 import RevenueTeams from "./revenue-teams";
 import Slider from "./slider";
-import SliderTeams from "./slider-team";
 import ThatWorks from "./that-works";
 import ValueCrm from "./value-crm";
 
@@ -17,7 +18,7 @@ export default function Home(){
         <DotDifference/>
         <ValueCrm/>
         <RevenueTeams/>
-        <SliderTeams/>
+       <SliderTeams/>
         </>
     )
 }

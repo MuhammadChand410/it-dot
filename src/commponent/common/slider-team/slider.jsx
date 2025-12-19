@@ -1,15 +1,45 @@
 import { useState, useEffect, useRef } from "react";
-import { LeftIcon, RightIcon, SliderIcon } from "../../assets/icon";
-import { GabrialImage, JordanImage, SamanthaImage } from "../../assets/images";
-import HeadDesc from "../../commponent/common/header/heading-para";
+import HeadDesc from "../header/heading-para";
+import { LeftIcon, RightIcon, SliderIcon } from "../../../assets/icon";
+import { GabrialImage, JordanImage, SamanthaImage } from "../../../assets/images";
 
 export default function SliderTeams() {
     const SLIDER_TEAMS = [
-        { id: 1, desc: "Our reps used to dread CRM updates — now dot.it does it for them. The AI catches details from every email thread and keeps deals moving without anyone lifting a finger. Productivity is up and our pipeline visibility has never been clearer.", thumbnail: SamanthaImage, title: "Samantha R.", text: "Head of Sales, Banking" },
-        { id: 2, desc: "dot.it is like having a personal assistant inside my inbox. It updates our CRM automatically and surfaces insights I didn’t even know I needed. My follow-ups are faster, my notes are accurate, and I’ve saved hours every week.", thumbnail: JordanImage, title: "Jordan M", text: "Account Executive, Automotive" },
-        { id: 3, desc: "I love that dot.it lives inside my email. I don’t have to switch tabs or dig through our CRM to find context. It just appears — client history, deal notes, next steps — all in one view. It’s like my inbox finally became intelligent.", thumbnail: GabrialImage, title: "Gabriel W.", text: "Project Manager, Market Research" },
-        { id: 4, desc: "I love that dot.it lives inside my email. I don’t have to switch tabs or dig through our CRM to find context. It just appears — client history, deal notes, next steps — all in one view. It’s like my inbox finally became intelligent.", thumbnail: SamanthaImage, title: "Samantha R", text: "Account Executive, Automotive" },
-        { id: 5, desc: "I love that dot.it lives inside my email. I don’t have to switch tabs or dig through our CRM to find context. It just appears — client history, deal notes, next steps — all in one view. It’s like my inbox finally became intelligent.", thumbnail: JordanImage, title: "Jordan M.", text: "Project Manager, Market Research" },
+        {
+            id: 1,
+            desc: "Our reps used to dread CRM updates — now dot.it does it for them. The AI catches details from every email thread and keeps deals moving without anyone lifting a finger. Productivity is up and our pipeline visibility has never been clearer.",
+            thumbnail: SamanthaImage,
+            title: "Samantha R.",
+            text: "Head of Sales, Banking"
+        },
+        {
+            id: 2,
+            desc: "dot.it is like having a personal assistant inside my inbox. It updates our CRM automatically and surfaces insights I didn’t even know I needed. My follow-ups are faster, my notes are accurate, and I’ve saved hours every week.",
+            thumbnail: JordanImage,
+            title: "Jordan M",
+            text: "Account Executive, Automotive"
+        },
+        {
+            id: 3,
+            desc: "I love that dot.it lives inside my email. I don’t have to switch tabs or dig through our CRM to find context. It just appears — client history, deal notes, next steps — all in one view. It’s like my inbox finally became intelligent.",
+            thumbnail: GabrialImage,
+            title: "Gabriel W.",
+            text: "Project Manager, Market Research"
+        },
+        {
+            id: 4,
+            desc: "I love that dot.it lives inside my email. I don’t have to switch tabs or dig through our CRM to find context. It just appears — client history, deal notes, next steps — all in one view. It’s like my inbox finally became intelligent.",
+            thumbnail: SamanthaImage,
+            title: "Samantha R",
+            text: "Account Executive, Automotive"
+        },
+        {
+            id: 5,
+            desc: "I love that dot.it lives inside my email. I don’t have to switch tabs or dig through our CRM to find context. It just appears — client history, deal notes, next steps — all in one view. It’s like my inbox finally became intelligent.",
+            thumbnail: JordanImage,
+            title: "Jordan M.",
+            text: "Project Manager, Market Research"
+        },
     ];
 
     const sliderRef = useRef(null);
@@ -106,4 +136,3 @@ export default function SliderTeams() {
         </section>
     );
 }
-
