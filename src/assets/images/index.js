@@ -47,6 +47,7 @@ import HeroHomeImage  from './hero-home.jpeg';
 import PmImage  from './pm-image.png';
 import WhatImage  from './what-image.png';
 import ContactUsImage  from './contact-us-image.png';
+import CaseStudiesImage  from './case-studies.png';
 export {
     HeaderLogo,
     CompleteImagee,
@@ -97,5 +98,6 @@ export {
     WhatImage,
     PmImage,
     ContactUsImage,
+    CaseStudiesImage,
     
 }

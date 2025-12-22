@@ -7,9 +7,9 @@ export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const RESOURCES_MENU = [
-        { id: 1, text: "Docs", path: "#" },
+        { id: 1, text: "Request a Demo", path: "/request/demo" },
         { id: 2, text: "Blogs", path: "/blogs" },
-        { id: 3, text: "Help Center", path: "#" },
+        { id: 3, text: "Case Studies", path: "/case/studies" },
         { id: 4, text: "Pricing", path: "/princing" },
         { id: 5, text: "Contact Us", path: "/contact/us" },
     ];

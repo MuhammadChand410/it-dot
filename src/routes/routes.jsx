@@ -12,6 +12,10 @@ import WhatWirefaring from "../commponent/common/single-blog/what-wirefaring";
 import TopJavasript from "../commponent/common/single-blog/top-javascript";
 import KeyDataBosted from "../commponent/common/single-blog/key-data-boosted";
 import Princing from "../pages/princing";
+import RequestDemo from "../pages/request-demo/requestt-demo";
+import CaseStudies from "../pages/case-studies";
+import CaseStudiesCommon from "../commponent/common/case-studies-common/case-studies-comon";
+import BillWashh from "../commponent/common/case-studies-common/bill-wash";
 
 export default function MyRouts() {
    return (
@@ -31,7 +35,10 @@ export default function MyRouts() {
                   <Route path="/top/javascript" element={<TopJavasript />} />
                   <Route path="/key/data/bossted" element={<KeyDataBosted />} />
                   <Route path="/princing" element={<Princing />} />
-                  
+                  <Route path="/request/demo" element={<RequestDemo />} />
+                  <Route path="/case/studies" element={<CaseStudies />} />
+                   <Route path="/case/studies/common" element={<CaseStudiesCommon />} />
+                   <Route path="/bill/washh" element={<BillWashh />} />
                </Route>
             </Routes>
          </BrowserRouter>
