@@ -1,22 +1,3 @@
-// import { IndustryImage } from "../../assets/images";
-// export default function Faqs() {
-//     return (
-//         <section className="md:py-20 py-8 bg-white">
-//             <div className="container">
-//                 <div className="grid grid-cols-1 md:grid-cols-[minmax(100px,610px)_minmax(100px,610px)] gap-15">
-//                     <div>
-//                         <img src={IndustryImage} alt="industry-image" width={610} height={629} loading="lazy" />
-//                     </div>
-//                     <div>
-//                         <h2 className="text-xl font-medium text-[#141219]">Finance</h2>
-//                         <p className="text-base font-normal text-[#414651]">dot.it supports telecom providers selling enterprise packages by tracking every stakeholder conversation across IT, procurement, and operations to predict which accounts are ready to upgrade bandwidth or switch plans.</p>
-//                     </div>
-//                 </div>
-//             </div>
-//         </section>
-//     )
-// }
-
 import { useState } from "react";
 import { IndustryImage } from "../../assets/images";
 
