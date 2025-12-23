@@ -14,8 +14,15 @@ import KeyDataBosted from "../commponent/common/single-blog/key-data-boosted";
 import Princing from "../pages/princing";
 import RequestDemo from "../pages/request-demo/requestt-demo";
 import CaseStudies from "../pages/case-studies";
-import CaseStudiesCommon from "../commponent/common/case-studies-common/case-studies-comon";
-import BillWashh from "../commponent/common/case-studies-common/bill-wash";
+import Transforming from "../commponent/common/case-studies-common/transforming";
+import Enhancing from "../commponent/common/case-studies-common/enhancing";
+import Streamlining from "../commponent/common/case-studies-common/streamlining";
+import Revotionizing from "../commponent/common/case-studies-common/revolutionizing";
+import Boosting from "../commponent/common/case-studies-common/boosting";
+import Reducing from "../commponent/common/case-studies-common/reducing";
+import Creating from "../commponent/common/case-studies-common/creating";
+import Automating from "../commponent/common/case-studies-common/automating";
+
 
 export default function MyRouts() {
    return (
@@ -37,8 +44,14 @@ export default function MyRouts() {
                   <Route path="/princing" element={<Princing />} />
                   <Route path="/request/demo" element={<RequestDemo />} />
                   <Route path="/case/studies" element={<CaseStudies />} />
-                   <Route path="/case/studies/common" element={<CaseStudiesCommon />} />
-                   <Route path="/bill/washh" element={<BillWashh />} />
+                  <Route path="/transforming" element={<Transforming />} />
+                  <Route path="/enhancing" element={<Enhancing />} />
+                  <Route path="/streamlining" element={<Streamlining />} />
+                  <Route path="/revolutionizing" element={<Revotionizing />} />
+                  <Route path="/boosting" element={<Boosting />} />
+                  <Route path="/reducing" element={<Reducing />} />
+                  <Route path="/creating" element={<Creating />} />
+                  <Route path="/automating" element={<Automating />} />
                </Route>
             </Routes>
          </BrowserRouter>

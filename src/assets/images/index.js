@@ -48,6 +48,14 @@ import PmImage  from './pm-image.png';
 import WhatImage  from './what-image.png';
 import ContactUsImage  from './contact-us-image.png';
 import CaseStudiesImage  from './case-studies.png';
+import AutomatingImage  from './automating-image.png';
+import BoostingImage  from './boosting-image.png';
+import CreatingImage  from './creating-image.png';
+import EnhancingImage  from './enhancing-image.png';
+import ReducingImage  from './reducing-image.png';
+import RevolutiozingImage  from './revolutiozing-image.png';
+import StreameningImage  from './streamening-image.png';
+import TransformingImage  from './transforming-image.png';
 export {
     HeaderLogo,
     CompleteImagee,
@@ -99,5 +107,14 @@ export {
     PmImage,
     ContactUsImage,
     CaseStudiesImage,
+    AutomatingImage,
+    BoostingImage,
+    CreatingImage,
+    EnhancingImage,
+    ReducingImage,
+    RevolutiozingImage,
+    StreameningImage,
+    TransformingImage,
+    
     
 }

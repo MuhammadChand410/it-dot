@@ -22,7 +22,7 @@ export default function Header() {
     ];
 
     return (
-        <header className="bg-white/20 py-2 md:py-[22px] sticky top-0 left-0 z-50 shadow-xs backdrop-blur-lg">
+        <header className="bg-white/20 py-3 md:py-[22px] sticky top-0 left-0 z-50 shadow-xs backdrop-blur-lg">
             <div className="container">
                 <nav className="flex items-center justify-between">
                     <Link to={`/`}>
@@ -100,7 +100,7 @@ export default function Header() {
                     </button>
                 </nav>
                 <div
-                    className={`md:hidden mt-4 bg-white shadow-lg rounded-xl overflow-hidden transition-all duration-300 
+                    className={`md:hidden bg-white shadow-lg rounded-xl overflow-hidden transition-all duration-300 
                                 ${menuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}
                             `}
                 >

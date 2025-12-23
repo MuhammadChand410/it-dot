@@ -1,8 +1,7 @@
 import CaseStudiesCommon from "./case-studies-comon";
 
-
-export default function BillWashh(){
-    const TITLE ='Transforming Marketing Campaigns with AdVision for BrandHive'
+export default function Boosting(){
+    const TITLE ='Boosting Cybersecurity with SecureGuard for FinServe Enterprises'
     return(
         <CaseStudiesCommon tittle={TITLE} herotitle={TITLE} />
     )

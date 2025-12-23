@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ArrowLeftIcon, ArrowRightIcon, ArrowwIcon, SearchIcon } from "../../assets/icon";
-import { BlogBillImage } from "../../assets/images";
+import { AutomatingImage, BoostingImage, CreatingImage, EnhancingImage, ReducingImage, RevolutiozingImage, StreameningImage, TransformingImage } from "../../assets/images";
 import { Link } from "react-router-dom";
 
 export default function CaseStudiesIndustry({ totalPages = 10 }) {
@@ -29,75 +29,75 @@ export default function CaseStudiesIndustry({ totalPages = 10 }) {
     const TECHNOLOGYY_IMAGEE = [
         {
             id: 1,
-            thumbnaill: BlogBillImage,
+            thumbnaill: TransformingImage,
             textt: 'dot.it • 15 October 2025',
-            titlee: 'Bill Walsh leadership lessons',
+            titlee: 'Transforming Marketing Campaigns with AdVision for BrandHive',
             descc: 'JavaScript frameworks make development easy with extensive features and functionalities.',
             spann: '#technology',
-            path:'/case/studies/common'
+            path:'/transforming'
         },
         {
             id: 2,
-            thumbnaill: BlogBillImage,
+            thumbnaill: EnhancingImage,
             textt: 'dot.it • 12 October 2025',
-            titlee: 'PM mental models',
+            titlee: 'Enhancing Customer Experience with OmniChannel CRM for Retailify',
             descc: 'JavaScript frameworks make development easy with extensive features and functionalities.',
             spann: '#Design',
-            path:'/bill/washh'
+            path:'/enhancing'
         },
         {
             id: 3,
-            thumbnaill: BlogBillImage,
+            thumbnaill: BoostingImage,
             textt: 'dot.it • 10 October 2025',
-            titlee: 'What is Wireframing?',
+            titlee: 'Boosting Cybersecurity with SecureGuard for FinServe Enterprises',
             descc: 'JavaScript frameworks make development easy with extensive features and functionalities.',
             spann: '#Design',
-            path:'/what/wirefaring'
+            path:'/boosting'
         },
         {
             id: 4,
-            thumbnaill: BlogBillImage,
+            thumbnaill: AutomatingImage,
             textt: 'dot.it • 8 October 2025',
-            titlee: 'Our top 10 Javascript frameworks to use',
+            titlee: 'Automating HR Tasks with PeopleSuite for NextGen Corp',
             descc: 'JavaScript frameworks make development easy with extensive features and functionalities.',
             spann: '#Design',
-            path:'/top/javascript'
+            path:'/automating'
         },
         {
             id: 5,
-            thumbnaill: BlogBillImage,
+            thumbnaill: ReducingImage,
             textt: 'dot.it • 5 October 2025',
-            titlee: 'Our top 10 Javascript frameworks to use',
+            titlee: 'Reducing Processing Time with FinTech Custom Solution for GreenBank',
             descc: 'JavaScript frameworks make development easy with extensive features and functionalities.',
             spann: '#Design',
-            path:'/top/javascript'
+            path:'/reducing'
         },
         {
             id: 6,
-            thumbnaill: BlogBillImage,
+            thumbnaill: CreatingImage,
             textt: 'dot.it • 3 October 2025',
-            titlee: 'Our top 10 Javascript frameworks to use',
+            titlee: 'Creating Custom AI Analytics Tools for AdSmart Media',
             descc: 'JavaScript frameworks make development easy with extensive features and functionalities.',
             spann: '#Design',
-            path:'/top/javascript'
+            path:'/creating'
         },
         {
             id: 7,
-            thumbnaill: BlogBillImage,
+            thumbnaill: StreameningImage,
             textt: 'dot.it • 5 October 2025',
-            titlee: 'Our top 10 Javascript frameworks to use',
+            titlee: 'Streamlining Logistics with RoutePro: A Custom Delivery Tracking Tool',
             descc: 'JavaScript frameworks make development easy with extensive features and functionalities.',
             spann: '#Design',
-            path:'/top/javascript'
+            path:'/streamlining'
         },
         {
             id: 8,
-            thumbnaill: BlogBillImage,
+            thumbnaill: RevolutiozingImage,
             textt: 'dot.it • 3 October 2025',
-            titlee: 'Our top 10 Javascript frameworks to use',
+            titlee: 'Revolutionizing Education Platforms with EduLearn for BrightFuture Academy',
             descc: 'JavaScript frameworks make development easy with extensive features and functionalities.',
             spann: '#Design',
-            path:'/top/javascript'
+            path:'/revolutionizing'
         },
     ];
 
@@ -166,7 +166,7 @@ export default function CaseStudiesIndustry({ totalPages = 10 }) {
                                     {card.textt}
                                 </span>
                                 <div className="flex items-start gap-4 pb-2 mt-4">
-                                    <h3 className="text-lg texxt-[#101828] font-medium">{card.titlee}</h3>
+                                    <h3 className="text-lg text-[#101828] font-medium grow line-clamp-2">{card.titlee}</h3>
                                     <div className="flex shrink-0">
                                         <ArrowwIcon />
                                     </div>
