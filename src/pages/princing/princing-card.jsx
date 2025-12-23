@@ -15,32 +15,6 @@ export default function PrincingCard() {
             text: 'No Long-Term Commitment'
         },
     ]
-    // const PRINCING_CARDS = [
-    //     {
-    //         id: 1,
-    //         title: " Monthly Subscription",
-    //         text: ' #80',
-    //         desc: 'Per user/month, billed monthly',
-    //         heading: 'For individuals and small teams:',
-    //         button:'Get Started',
-    //     },
-    //     {
-    //         id: 2,
-    //         title: "Annual Subscription",
-    //         text: ' #70',
-    //         desc: 'Per user/month, billed monthly',
-    //         heading: 'For growing teams:',
-    //         button:'Get Started',
-    //     },
-    //     {
-    //         id: 3,
-    //         title: "Enterprise Plan",
-    //         text: 'Custom',
-    //         desc: 'Custom',
-    //         heading: 'For scaling and larger teams:',
-    //         button:'Contact Sales ',
-    //     },
-    // ]
     const PRINCING_CARDS = [
         {
             id: 1,

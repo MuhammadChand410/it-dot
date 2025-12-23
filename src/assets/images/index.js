@@ -36,7 +36,6 @@ import Beyond  from './beyond.mp4';
 import Seamless  from './seamless.mp4';
 import UserCentric  from './user-centric.mp4';
 import Automate  from './automate-workflows.mp4';
-// import AiReply  from './ai-reply.mp4';
 import IndustryImage  from './industry-image.png';
 import ManagementImagee  from './management-image.png';
 import FeaturesImage  from './feature-image.png';
@@ -95,7 +94,6 @@ export {
     UserCentric,
     Seamless,
     Automate,
-    // AiReply,
     IndustryImage,
     ManagementImagee,
     FeaturesImage,
@@ -115,6 +113,4 @@ export {
     RevolutiozingImage,
     StreameningImage,
     TransformingImage,
-    
-    
 }

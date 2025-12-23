@@ -58,9 +58,16 @@ export default function Articules({ totalPages = 10 }) {
                     <div className="grid grid-cols-1 md:grid-cols-[minmax(100px,492px)_minmax(100px,764px)] gap-6">
                         {TECHNOLOGYY_IMAGEE.map((card =>
                             <Link to={`/key/data/bossted`} className="px-3 py-3 w-fit h-fit border border-gray-200 rounded-xl" key={card.id}>
-                                <div className="">
-                                    <img src={card.thumbnaill} className=" h-full w-full" alt="technology-image" width={204} height={194} loading="lazy" />
+                                <div
+                                    className=" w-full h-[200px] md:h-[242px] overflow-hidden rounded-lg">
+                                    <img
+                                        src={card.thumbnaill}
+                                        alt="technology-image"
+                                        loading="lazy"
+                                        className="w-full h-full object-cover"
+                                    />
                                 </div>
+
                                 <div className="mt-4">
                                     <span className="text-sm font-semibold text-[#0160C9] ">{card.textt}</span>
                                     <div className="flex items-start gap-4 pb-2 mt-4">
@@ -97,8 +104,10 @@ export default function Articules({ totalPages = 10 }) {
                                                 <ArrowwIcon />
                                             </div>
                                         </div>
-                                        <p className="text-sm font-normal text-[#475467] pb-4">{card.desc}</p>
-                                        <span className="text-sm font-medium text-[#535862]  py-0.5 px-1.5 rounded-md border border-gray-200 bg-white">{card.span}</span>
+                                        <div>
+                                            <p className="text-sm font-normal text-[#475467] pb-4 md:pb-8">{card.desc}</p>
+                                            <span className="text-sm font-medium text-[#535862]  py-0.5 px-1.5 rounded-md border border-gray-200 bg-white">{card.span}</span>
+                                        </div>
                                     </div>
                                 </Link>
                             ))}

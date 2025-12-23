@@ -1,5 +1,3 @@
-// import AiReply from "./../../assets/images";
-
 export default function CompleteImage() {
     return (
         <section className="pb-8 md:pb-20">
