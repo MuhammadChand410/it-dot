@@ -1,5 +1,4 @@
 import { TickCircalIcon } from "../../assets/icon";
-
 export default function PrincingCard() {
     const TICKDESC = [
         {

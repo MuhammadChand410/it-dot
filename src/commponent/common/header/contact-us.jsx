@@ -1,7 +1,7 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import Button from "./button";
-import { ContactUsImage } from "../../../assets/images";
+import { ContactUsImage } from "../../../assets/images"; 
 
 export default function ComponentContactUs({ heading, description }) {
     const validationSchema = Yup.object({
