@@ -22,6 +22,7 @@ import Boosting from "../commponent/common/case-studies-common/boosting";
 import Reducing from "../commponent/common/case-studies-common/reducing";
 import Creating from "../commponent/common/case-studies-common/creating";
 import Automating from "../commponent/common/case-studies-common/automating";
+import Careers from "../pages/careers";
 
 
 export default function MyRouts() {
@@ -52,6 +53,7 @@ export default function MyRouts() {
                   <Route path="/reducing" element={<Reducing />} />
                   <Route path="/creating" element={<Creating />} />
                   <Route path="/automating" element={<Automating />} />
+                  <Route path="/careers" element={<Careers />} />
                </Route>
             </Routes>
          </BrowserRouter>

@@ -83,9 +83,9 @@ export default function Header() {
                             </li>
                         ))}
                     </ul>
-                    <button className="hidden md:block bg-[#0160C9] cursor-pointer py-2.5 px-5 rounded-full text-white text-sm font-semibold hover:bg-[#014fa8] transition-all duration-200">
+                    <Link to="https://tally.so/r/315L24" target="blank" className="hidden md:block bg-[#0160C9] cursor-pointer py-2.5 px-5 rounded-full text-white text-sm font-semibold hover:bg-[#014fa8] transition-all duration-200">
                         Get Started
-                    </button>
+                    </Link>
 
                     <button
                         className="md:hidden flex flex-col gap-1 cursor-pointer"
@@ -154,9 +154,9 @@ export default function Header() {
                             </li>
                         ))}
 
-                        <button className="bg-[#0160C9] py-2 mt-2 rounded-full text-white text-sm font-semibold hover:bg-[#014fa8] transition-all duration-200">
+                        <Link to="https://tally.so/r/315L24" target="blank" className="bg-[#0160C9] py-2 mt-2 rounded-full flex justify-center text-white text-sm font-semibold hover:bg-[#014fa8] transition-all duration-200">
                             Get Started
-                        </button>
+                        </Link>
                     </ul>
                 </div>
             </div>

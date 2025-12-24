@@ -10,19 +10,19 @@ export default function Footer({ count = 5, className = "" }) {
             links: [
                 {
                     text: 'Platform Overview',
-                    path: '#'
+                    path: '/product'
                 },
                 {
                     text: 'Request a Demo ',
-                    path: '#'
+                    path: '/request/demo'
                 },
                 {
                     text: 'Why dot.it',
-                    path: '#'
+                    path: '/why/dot/it'
                 },
                 {
                     text: 'Pricing',
-                    path: '#'
+                    path: '/princing'
                 },
 
             ]
@@ -32,7 +32,7 @@ export default function Footer({ count = 5, className = "" }) {
             links: [
                 {
                     text: 'Careers',
-                    path: '#'
+                    path: '/careers'
                 },
                 {
                     text: 'FAQ',
