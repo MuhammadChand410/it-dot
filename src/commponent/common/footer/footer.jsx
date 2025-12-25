@@ -36,7 +36,7 @@ export default function Footer({ count = 5, className = "" }) {
                 },
                 {
                     text: 'FAQ',
-                    path: '#'
+                    path: '/careers#faqs'
                 },
             ]
         }
@@ -47,15 +47,15 @@ export default function Footer({ count = 5, className = "" }) {
             links: [
                 {
                     text: 'Contact',
-                    path: '#'
+                    path: '/contact/us'
                 },
                 {
                     text: 'Privacy Policy',
-                    path: '#'
+                    path: '/privacy/policy'
                 },
                 {
                     text: 'Terms of Service ',
-                    path: '#'
+                    path: '/terms/service'
                 },
 
             ]
@@ -94,7 +94,7 @@ export default function Footer({ count = 5, className = "" }) {
                         <p className="text-[#535862] text-sm font-medium">100+ Early access members</p>
                     </div>
                     <div className="flex justify-center">
-                        <Button text={`Get Started`}/>
+                        <Button text={`Get Started`} />
                     </div>
                 </div>
                 <div className="bg-white py-8">
@@ -107,10 +107,9 @@ export default function Footer({ count = 5, className = "" }) {
                                 <p className="text-base text-[#131313] font-normal pt-4 pb-4">dot your i's and cross your t's</p>
                                 <p className="text-base max-w-[206px] text-[#131313] font-normal pb-5">dot.it Technologies, Inc.
                                     Craig Ranch, McKinney, TX</p>
-                               <div className="md:pb-0 pb-4">
-
-                                <LinkdenIcon />
-                               </div>
+                                <Link to='https://www.linkedin.com/' target="blank" className="md:pb-0 pb-4">
+                                    <LinkdenIcon />
+                                </Link>
 
                             </div>
                             <div>
@@ -154,13 +153,12 @@ export default function Footer({ count = 5, className = "" }) {
                                                         return (
                                                             <li key={linkItem.text} className="pb-3 flex gap-2 items-center">
 
-                                                                <a
-                                                                    href={href}
+                                                                <Link to={linkItem.path}
                                                                     {...(isMap ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                                                                     className="font-normal text-base text-[#131313] decoration-none"
                                                                 >
                                                                     {linkItem.text}
-                                                                </a>
+                                                                </Link>
                                                             </li>
                                                         );
                                                     })

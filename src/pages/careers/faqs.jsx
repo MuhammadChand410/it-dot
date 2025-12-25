@@ -1,8 +1,22 @@
-import { useState } from "react";
+
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 export default function Faqs() {
-    const [openId, setOpenId] = useState(null);
 
+    const { hash } = useLocation();
+    useEffect(() => {
+        if (hash) {
+            const element = document.querySelector(hash);
+            if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    }, [hash]);
+
+   
+   
+    const [openId, setOpenId] = useState(null);
     const toggleFaq = (id) => {
         setOpenId(openId === id ? null : id);
     };
@@ -41,7 +55,7 @@ export default function Faqs() {
 
     ];
     return (
-        <section className="bg-gray-50 md:py-20 py-8">
+        <section className="bg-gray-50 md:py-20 py-8" id="faqs">
             <div className="container">
                 <div className="grid place-items-center w-full">
                     <div className="max-w-[692px] w-full grid gap-4">

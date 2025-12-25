@@ -23,6 +23,9 @@ import Reducing from "../commponent/common/case-studies-common/reducing";
 import Creating from "../commponent/common/case-studies-common/creating";
 import Automating from "../commponent/common/case-studies-common/automating";
 import Careers from "../pages/careers";
+import PrivacyPolicy from "../pages/privacy-policy";
+import TermsService from "../pages/terms-service";
+
 
 
 export default function MyRouts() {
@@ -54,6 +57,8 @@ export default function MyRouts() {
                   <Route path="/creating" element={<Creating />} />
                   <Route path="/automating" element={<Automating />} />
                   <Route path="/careers" element={<Careers />} />
+                  <Route path="/privacy/policy" element={<PrivacyPolicy />} />
+                  <Route path="/terms/service" element={<TermsService />} />
                </Route>
             </Routes>
          </BrowserRouter>
