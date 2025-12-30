@@ -49,8 +49,8 @@ export default function RightInbox() {
     return (
         <section className="my-8 md:my-20">
             <div className="container">
-                <div className="bg-[rgba(230,233,237,0.14)] shadow-sm rounded-xl pl-8 grid grid-cols-1 items-center justify-center md:grid-cols-[minmax(100px,592px)_minmax(100px,628px)] gap-7">
-                    <div className="grid gap-6 py-8">
+                <div className="bg-[rgba(230,233,237,0.14)] shadow-sm rounded-xl grid grid-cols-1 items-center justify-center md:grid-cols-[minmax(100px,592px)_minmax(100px,628px)]">
+                    <div className="grid gap-6 p-7.5 py-8">
                         <h2 className="text-4xl font-semibold text-[#141219]">
                             Everything you need <br /> right inside your inbox
                         </h2>

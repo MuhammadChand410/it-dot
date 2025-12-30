@@ -65,12 +65,12 @@ export default function Footer({ count = 5, className = "" }) {
             links: [
                 {
                     text: 'support@gotdot.it',
-                    path: '/mailto',
+                    path: 'mailto:support@gotdot.it',
 
                 },
                 {
                     text: 'ellew@gotdot.it',
-                    path: '/mailto',
+                    path: 'mailto:ellew@gotdot.it',
 
                 },
             ]

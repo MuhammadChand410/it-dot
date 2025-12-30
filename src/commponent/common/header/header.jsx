@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { HeaderLogo } from "../../../assets/images";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
     const [openDropdown, setOpenDropdown] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
+    const [activeId, setActiveId] = useState(null);
 
     const RESOURCES_MENU = [
         { id: 1, text: "Request a Demo", path: "/request/demo" },
@@ -33,18 +35,19 @@ export default function Header() {
                             <li key={item.id} className="relative group">
 
                                 {item.text !== "Resources" ? (
-                                    <Link
+                                    <Link 
                                         to={item.path}
-                                        className="relative text-[#002B5A] text-lg font-medium hover:text-[#0160C9] duration-200
+                                         onClick={() => setActiveId(item.id)}
+                                        className={`relative text-[#002B5A] text-lg font-medium hover:text-[#0160C9] duration-200
                                                    before:absolute before:-top-2 before:-left-2 before:-translate-x-1/2
                                                    before:w-2 before:h-2 before:rounded-full before:bg-[#0160C9] before:opacity-0
-                                                   group-hover:before:opacity-100 before:transition-opacity before:duration-200"
+                                                   group-hover:before:opacity-100 before:transition-opacity before:duration-200 ${activeId === item.id ? "text-[#0160C9] before:opacity-100" : ""}`}
                                     >
                                         {item.text}
                                     </Link>
                                 ) : (
                                     <div
-                                        className={`relative flex items-center text-lg font-medium cursor-pointer select-none duration-200
+                                        className={`relative flex items-center text-lg font-medium cursor-pointer select-none duration-200 
                                                     ${openDropdown ? "text-[#0160C9]" : "text-[#002B5A]"}`}
                                         onClick={() => setOpenDropdown(prev => !prev)}
                                     >
@@ -68,7 +71,7 @@ export default function Header() {
                                                 }`}
                                         >
                                             {RESOURCES_MENU.map((menu) => (
-                                                <Link
+                                                <Link 
                                                     key={menu.id}
                                                     to={menu.path}
                                                     className="block text-gray-700 text-sm py-2 px-2 rounded-md 

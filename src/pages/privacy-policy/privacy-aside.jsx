@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
@@ -37,6 +38,10 @@ const ASIDE_LINKS = [
   {
     id: 9,
     heading: 'Changes to This Privacy Policy'
+  },
+   {
+    id: 10,
+    heading: 'Contact Us'
   },
 
 
@@ -137,92 +142,16 @@ const PRIVACY_SECTIONS = [
 ];
 
 export default function PrivacyAside() {
-  {/* <div className="max-w-[692px]">
-                        <p className="text-lg font-normal text-[#777B8B] pb-10">dot.it Technologies, Inc. d/b/a "dot.it" ("Dot" or "the company" "we", "us", "our") is a privately held software company, with headquarters in McKinney, Texas. This Privacy Policy explains how we collect, use, disclose and safeguard your information when you visit our SaaS AI Engagement Software ("Service"). By accessing or using our Service, you agree to the terms of this Privacy Policy. If you do not agree with the terms, please do not use our Service.</p>
-                        <h3 className="text-2xl font-semibold text-[#101828] pb-5">What information do we collect?</h3>
-                        <p className="text-lg font-normal text-[#777B8B] pb-10">We collect several types of information to provide and improve our Service to you:</p>
-
-                        <h4 className="text-lg font-semibold text-[#101828] mb-3">a. Personal Information</h4>
-                        <p className="text-lg font-semibold text-[#101828] mb-1">• Contact Information: Name, email address, phone number, and company details.</p>
-                        <p className="text-lg font-semibold text-[#101828] mb-4">• Account Information: Username, password, and other security information for authentication.</p>
-
-                        <h4 className="text-lg font-semibold text-[#101828] mb-3">b. Personal Information</h4>
-                        <p className="text-lg font-semibold text-[#101828] mb-1">• Contact Information: Name, email address, phone number, and company details.</p>
-                        <p className="text-lg font-semibold text-[#101828] mb-4">• Account Information: Username, password, and other security information for authentication.</p>
-
-                        <h4 className="text-lg font-semibold text-[#101828] mb-3">c. Personal Information</h4>
-                        <p className="text-lg font-semibold text-[#101828] mb-1">• Contact Information: Name, email address, phone number, and company details.</p>
-                        <p className="text-lg font-semibold text-[#101828] mb-4">• Account Information: Username, password, and other security information for authentication.</p>
-
-                        <h4 className="text-lg font-semibold text-[#101828] mb-3">d. Personal Information</h4>
-                        <p className="text-lg font-semibold text-[#101828] mb-1">• Contact Information: Name, email address, phone number, and company details.</p>
-                        <p className="text-lg font-semibold text-[#101828] mb-4">• Account Information: Username, password, and other security information for authentication.</p>
-
-                        <h3 className="text-2xl font-semibold text-[#101828] pb-5">How do we use your information?</h3>
-                        <p className="text-lg font-normal text-[#777B8B] pb-4">We use the collected information for various purposes:</p>
-
-                        <p className="text-lg font-normal text-[#777B8B] pb-1">• To Provide and Maintain the Service: Ensure proper operation and provide features you have requested.</p>
-                        <p className="text-lg font-normal text-[#777B8B] pb-1">• To Provide and Maintain the Service: Ensure proper operation and provide features you have requested.</p>
-                        <p className="text-lg font-normal text-[#777B8B] pb-1">• To Provide and Maintain the Service: Ensure proper operation and provide features you have requested.</p>
-                        <p className="text-lg font-normal text-[#777B8B] pb-1">• To Provide and Maintain the Service: Ensure proper operation and provide features you have requested.</p>
-                        <p className="text-lg font-normal text-[#777B8B] pb-10">• To Provide and Maintain the Service: Ensure proper operation and provide features you have requested.</p>
-
-                        <h3 className="text-2xl font-semibold text-[#101828] pb-5">Sharing Your Information</h3>
-                        <p className="text-lg font-normal text-[#777B8B] pb-4">We use the collected information for various purposes:</p>
-
-                        <p className="text-lg font-normal text-[#777B8B] pb-1">• To Provide and Maintain the Service: Ensure proper operation and provide features you have requested.</p>
-                        <p className="text-lg font-normal text-[#777B8B] pb-1">• To Provide and Maintain the Service: Ensure proper operation and provide features you have requested.</p>
-                        <p className="text-lg font-normal text-[#777B8B] pb-10">• To Provide and Maintain the Service: Ensure proper operation and provide features you have requested.</p>
-
-                        <h3 className="text-2xl font-semibold text-[#101828] pb-5">Data Security</h3>
-                        <p className="text-lg font-normal text-[#777B8B] pb-10">We implement appropriate technical and organizational measures to protect your information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the Internet or electronic storage is 100% secure.</p>
-
-                        <h3 className="text-2xl font-semibold text-[#101828] pb-5">Data Retention</h3>
-                        <p className="text-lg font-normal text-[#777B8B] pb-10">We retain your information as long as necessary to provide the Service and fulfill the purposes outlined in this Privacy Policy. We may also retain and use your information to comply with legal obligations, resolve disputes, and enforce our agreements.</p>
-
-                        <h3 className="text-2xl font-semibold text-[#101828] pb-5">How do we use your information?</h3>
-                        <p className="text-lg font-normal text-[#777B8B] pb-4">We use the collected information for various purposes:</p>
-
-                        <p className="text-lg font-normal text-[#777B8B] pb-1">• To Provide and Maintain the Service: Ensure proper operation and provide features you have requested.</p>
-                        <p className="text-lg font-normal text-[#777B8B] pb-1">• To Provide and Maintain the Service: Ensure proper operation and provide features you have requested.</p>
-                        <p className="text-lg font-normal text-[#777B8B] pb-1">• To Provide and Maintain the Service: Ensure proper operation and provide features you have requested.</p>
-                        <p className="text-lg font-normal text-[#777B8B] pb-1">• To Provide and Maintain the Service: Ensure proper operation and provide features you have requested.</p>
-                        <p className="text-lg font-normal text-[#777B8B] pb-4">• To Provide and Maintain the Service: Ensure proper operation and provide features you have requested.</p>
-                        <p className="text-lg font-normal text-[#777B8B] pb-10">We use the collected information for various purposes:</p>
-
-                        <h3 className="text-2xl font-semibold text-[#101828] pb-5">International Data Transfers</h3>
-                        <p className="text-lg font-normal text-[#777B8B] pb-10">Your information may be transferred to and processed in countries other than your own. We ensure that such transfers are conducted in accordance with applicable data protection laws and that appropriate safeguards are in place.</p>
-
-                        <h3 className="text-2xl font-semibold text-[#101828] pb-5">Third-Party Links</h3>
-                        <p className="text-lg font-normal text-[#777B8B] pb-10">Our Service may contain links to third-party websites or services. We are not responsible for the privacy practices or content of these third parties.</p>
-
-                        <h3 className="text-2xl font-semibold text-[#101828] pb-5">Changes to This Privacy Policy</h3>
-                        <p className="text-lg font-normal text-[#777B8B] pb-10">We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. We encourage you to review this Privacy Policy periodically.</p>
-
-                        <h3 className="text-2xl font-semibold text-[#101828] pb-5">Contact Us</h3>
-                        <p className="text-lg font-normal text-[#777B8B] pb-4">We use the collected information for various purposes:</p>
-
-                        <p className="text-lg font-normal text-[#777B8B] pb-1">dot.it Technologies, Inc.</p>
-                        <p className="text-lg font-normal text-[#777B8B] pb-1">dot.it Technologies, Inc.</p>
-                        <p className="text-lg font-normal text-[#777B8B] pb-1">dot.it Technologies, Inc.</p>
-                        <p className="text-lg font-normal text-[#777B8B] pb-1">469-543-6341</p>
-                        <p className="text-lg font-normal text-[#777B8B] pb-1">469-543-6341</p>
-                        <p className="text-lg font-normal text-[#777B8B] pb-4">469-543-6341</p>
-                        <p className="text-lg font-normal text-[#777B8B] pb-10">We use the collected information for various purposes:</p>
-
-
-                      
-
-                    </div> */}
+  const [activeId, setActiveId] = useState(null);
   return (
     <section className="md:py-20 py-8 bg-white">
       <div className="container">
         <div className="flex gap-20 px-8">
-          <aside className="hidden md:block max-w-[362px] h-[464px] bg-gray-50 border border-gray-200 px-8 py-8 rounded-xl sticky top-24 self-start">
+          <aside className="hidden md:block w-[362px] h-[510px] bg-gray-50 border border-gray-200 px-8 py-8 rounded-xl sticky top-24 self-start">
             <div className="flex md:flex-col flex-row justify-between">
               {ASIDE_LINKS.map((card =>
-                <HashLink smooth to={`#section-${card.id}`} className="grid gap-3" key={card.id}>
-                  <h2 className="text-lg font-normal text-[#717680] pb-3">{card.heading}</h2>
+                <HashLink smooth to={`#section-${card.id}`} className="grid gap-3" key={card.id} onClick={() => setActiveId(card.id)}>
+                  <h2 className={`text-lg text-[#717680] pb-3 transition-colors ${activeId === card.id ? "text-blue-700 font-medium" : "text-[#717680] font-normal"}`}>{card.heading}</h2>
                 </HashLink>
               ))}
               <Link to='/contact/us' className="bg-[#0160C9] w-fit cursor-pointer py-3 px-5 rounded-full text-white text-sm font-semibold hover:bg-[#014fa8] transition-all duration-200">
