@@ -1,5 +1,6 @@
 
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
 
 export default function Faqs() {
@@ -14,8 +15,8 @@ export default function Faqs() {
         }
     }, [hash]);
 
-   
-   
+
+
     const [openId, setOpenId] = useState(null);
     const toggleFaq = (id) => {
         setOpenId(openId === id ? null : id);
@@ -55,59 +56,69 @@ export default function Faqs() {
 
     ];
     return (
-        <section className="bg-gray-50 md:py-20 py-8" id="faqs">
-            <div className="container">
-                <div className="grid place-items-center w-full">
-                    <div className="max-w-[692px] w-full grid gap-4">
-                        <div>
-                            <h2 className="text-4xl text-center font-semibold text-[#141219] pb-4">Frequently Asked Questions</h2>
-                            <p className="text-lg text-center max-w-[590px] mx-auto font-normal text-[#141219] md:pb-6 pb-0">Start with dot.it and watch every email become an opportunity and every lead a seamless sale.  Embrace the future of sales management.</p>
-                        </div>
-                        {faqs.map((faq) => (
-                            <div
-                                key={faq.id}
-                                className="border rounded-xl shadow-sm border-gray-200 bg-white p-4 transition-all cursor-pointer"
-                            >
-
-                                <div
-                                    className="flex items-center justify-between"
-                                    onClick={() => toggleFaq(faq.id)}
-                                >
-                                    <h2 className="text-lg font-medium text-[#141219] w-full">{faq.question}</h2>
-
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        strokeWidth={2}
-                                        stroke="currentColor"
-                                        className={`w-5 h-5 transition-transform ${openId === faq.id ? "rotate-180" : ""
-                                            }`}
-                                    >
-                                        {openId === faq.id ? (
-                                            <path
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                d="M5 12h14"
-                                            />
-                                        ) : (
-                                            <path
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                d="M12 5v14m-7-7h14"
-                                            />
-                                        )}
-                                    </svg>
-                                </div>
-
-                                {openId === faq.id && (
-                                    <p className="text-base text-[#414651] mt-2">{faq.answer}</p>
-                                )}
+        <>
+            <Helmet>
+                <title>My Awesome Faqs</title>
+                <meta name="description" content="Homepage for My Awesome Website" />
+                <meta property="og:title" content="Home — My Awesome Website" />
+                <meta property="og:description" content="Homepage for My Awesome Website" />
+                <meta property="og:url" content="https://it-dot.vercel.app/" />
+                <meta name="twitter:card" content="summary_large_image" />
+            </Helmet>
+            <section className="bg-gray-50 md:py-20 py-8" id="faqs" style={{ scrollMarginTop: '40px' }}>
+                <div className="container">
+                    <div className="grid place-items-center w-full">
+                        <div className="max-w-[692px] w-full grid gap-4">
+                            <div>
+                                <h2 className="text-4xl text-center font-semibold text-[#141219] pb-4">Frequently Asked Questions</h2>
+                                <p className="text-lg text-center max-w-[590px] mx-auto font-normal text-[#141219] md:pb-6 pb-0">Start with dot.it and watch every email become an opportunity and every lead a seamless sale.  Embrace the future of sales management.</p>
                             </div>
-                        ))}
+                            {faqs.map((faq) => (
+                                <div
+                                    key={faq.id}
+                                    className="border rounded-xl shadow-sm border-gray-200 bg-white p-4 transition-all cursor-pointer"
+                                >
+
+                                    <div
+                                        className="flex items-center justify-between"
+                                        onClick={() => toggleFaq(faq.id)}
+                                    >
+                                        <h2 className="text-lg font-medium text-[#141219] w-full">{faq.question}</h2>
+
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            strokeWidth={2}
+                                            stroke="currentColor"
+                                            className={`w-5 h-5 transition-transform ${openId === faq.id ? "rotate-180" : ""
+                                                }`}
+                                        >
+                                            {openId === faq.id ? (
+                                                <path
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    d="M5 12h14"
+                                                />
+                                            ) : (
+                                                <path
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    d="M12 5v14m-7-7h14"
+                                                />
+                                            )}
+                                        </svg>
+                                    </div>
+
+                                    {openId === faq.id && (
+                                        <p className="text-base text-[#414651] mt-2">{faq.answer}</p>
+                                    )}
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </>
     )
 }

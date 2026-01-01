@@ -1,9 +1,18 @@
+import { Helmet } from "react-helmet";
 import HeadingWithText from "../../commponent/common/header/component-heading";
 import ComponentContactUs from "../../commponent/common/header/contact-us";
 
 export default function Contact() {
     return (
         <>
+            <Helmet>
+                <title>My Awesome Contact Us</title>
+                <meta name="description" content="Homepage for My Awesome Website" />
+                <meta property="og:title" content="Home — My Awesome Website" />
+                <meta property="og:description" content="Homepage for My Awesome Website" />
+                <meta property="og:url" content="https://it-dot.vercel.app/" />
+                <meta name="twitter:card" content="summary_large_image" />
+            </Helmet>
             <section className="md:py-20 py-8 bg-gray-50">
                 <div className="container">
                     <div className="grid justify-center">
