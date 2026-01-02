@@ -57,7 +57,7 @@ export default function Articules({ totalPages = 10 }) {
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-[minmax(100px,492px)_minmax(100px,764px)] gap-6">
                         {TECHNOLOGYY_IMAGEE.map((card =>
-                            <Link to={`/key/data/bossted`} className="px-3 py-3 w-fit h-fit border border-gray-200 rounded-xl" key={card.id}>
+                            <Link to={`/key/data/bossted`} className="px-3 py-3 w-full h-fit border border-gray-200 rounded-xl" key={card.id}>
                                 <div
                                     className=" w-full h-[200px] md:h-[242px] overflow-hidden rounded-lg">
                                     <img

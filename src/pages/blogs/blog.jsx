@@ -129,7 +129,7 @@ export default function Blog({ totalPages = 10 }) {
                 <div className="grid md:grid-cols-3 grid-cols-1 pt-6 gap-6 border-b border-gray-200 pb-6">
                     {displayedCards.map((card) => (
                         <Link to={card.path}
-                            className="px-3 py-3 w-fit h-fit border border-gray-200 rounded-xl"
+                            className="px-3 py-3 w-full h-fit border border-gray-200 rounded-xl"
                             key={card.id}
                         >
                             <div className="w-full h-60 md:h-64 lg:h-68 overflow-hidden rounded-xl">

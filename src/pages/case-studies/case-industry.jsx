@@ -149,15 +149,16 @@ export default function CaseStudiesIndustry({ totalPages = 10 }) {
                 <div className="grid md:grid-cols-4 grid-cols-1 pt-6 gap-6 border-b border-gray-200 pb-6">
                     {displayedCards.map((card) => (
                         <Link to={card.path}
-                            className="px-3 py-3 w-fit h-fit border border-gray-200 rounded-xl"
+                            className="px-3 py-3 w-full h-fit border border-gray-200 rounded-xl"
                             key={card.id}
                         >
-                            <div className="w-full h-60 md:h-50 lg:h-60 overflow-hidden rounded-xl">
+                            <div className="w-full h-60 lg:h-50 md:h-30 overflow-hidden rounded-xl">
                                 <img
                                     src={card.thumbnaill}
                                     alt="blog-bill-image"
-                                    className="w-full h-full object-cover"
+                                    className="w-full object-cover"
                                     loading="lazy"
+                                    height={240} width={278}
                                 />
                             </div>
 
